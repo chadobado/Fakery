@@ -136,6 +136,11 @@ extension Faker {
       return "https://dummyimage.com/\(width)x\(height)/\(backColorHex)/\(frontColorHex)"
     }
 
+    public func avatarImage() {
+      let randomAvatar = generate("internet.avatar")
+      return "https://cdn.fakercloud.com/avatars/\(randomAvatar)"
+    }
+
     public func hashtag() -> String {
       return generate("internet.hashtag")
     }
